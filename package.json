@@ -4,6 +4,9 @@
   "main": "index.js",
   "author": "aflinsjr@icloud.com <aflinsjr@icloud.com>",
   "license": "MIT",
+  "scripts": {
+    "dev": "tsnd --inspect --respawn --ignore-watch node_modules --transpile-only src/server.ts"
+  },
   "dependencies": {
     "express": "^4.17.2"
   },
