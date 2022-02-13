@@ -9,16 +9,22 @@ const categories: Category[] = [];
 categoriesRoutes.post('/', (request, response) => {
   const { name, description } = request.body;
 
-  const category: Category = {
+  const category = new Category();
+
+  // Faremos outro método mais simples
+  //category.name = name;
+  //category.description = description;
+  //category.created_at = new Date();
+
+  Object.assign(category, {
     name,
     description,
-    id: uuidV4(),
     created_at: new Date()
-  };
+  })
 
   categories.push(category);
 
-  return response.status(201).send();
+  return response.status(201).json({ category });
 });
 
 export { categoriesRoutes };
