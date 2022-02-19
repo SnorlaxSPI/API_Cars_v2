@@ -1,14 +1,9 @@
 import { Category } from '../model/Category'
+import { ICategoriesRepository, ICreateCategoryDTO } from './ICategoriesRepository';
 
 // DTO => Data transfer object
 
-interface ICreateCategoryDTO {
-  name: string;
-  description: string;
-}
-
-class CategoriesRepository {
-
+class CategoriesRepository implements ICategoriesRepository {
   private categories: Category[] = [];
 
   constructor() {
@@ -17,12 +12,7 @@ class CategoriesRepository {
 
   create({ description, name }: ICreateCategoryDTO): void {
     const category = new Category();
-
-    // Faremos outro método mais simples
-    //category.name = name;
-    //category.description = description;
-    //category.created_at = new Date();
-  
+ 
     Object.assign(category, {
       name,
       description,
@@ -36,8 +26,8 @@ class CategoriesRepository {
     return this.categories;
   }
 
-  findByName(name: string): Category | void {
-    const category = this.categories.find((category) => category.name === name);
+  findByName(name: string): Category {
+    const category : any = this.categories.find(category => category.name === name);
     return category;
   }
 }
