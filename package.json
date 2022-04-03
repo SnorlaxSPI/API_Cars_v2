@@ -5,7 +5,8 @@
   "author": "aflinsjr@icloud.com <aflinsjr@icloud.com>",
   "license": "MIT",
   "scripts": {
-    "dev": "tsnd --inspect --respawn --ignore-watch node_modules --transpile-only src/server.ts"
+    "dev": "tsnd --inspect --respawn --ignore-watch node_modules --transpile-only src/server.ts",
+    "typeorm": "tsnd ./node_modules/typeorm/cli.js"
   },
   "dependencies": {
     "csv-parse": "4.15.3",
@@ -13,7 +14,7 @@
     "multer": "^1.4.4",
     "pg": "^8.7.3",
     "swagger-ui-express": "^4.3.0",
-    "typeorm": "^0.3.4",
+    "typeorm": "0.2.31",
     "uuid": "^8.3.2"
   },
   "devDependencies": {
