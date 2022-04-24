@@ -3,6 +3,7 @@ import { CategoriesRepository } from '../modules/cars/repositories/CategoriesRep
 import { CreateCategoryService } from '../modules/cars/services/CreateCategoryService';
 
 const categoriesRoutes = Router();
+
 const categoriesRepository = new CategoriesRepository();
 
 categoriesRoutes.post('/', (request, response) => {
