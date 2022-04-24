@@ -12,3 +12,10 @@ entre uma classe e outra.
 
 Toda vez que criarmos um objeto, recebermos informações da rota, criaremos um DTO pra pegar esses valores da rota e 
 recebermos do repositório.
+
+** Com o decorrer, precisamores definir mais repositorírios e nesse caso seria as 
+specifications. Ele ficaria no diretório repositories e de acordo com o clean code,
+a nossa classe de repositório ficaria muito grande e a gente se perderia.
+
+** Uma das formas de estruturar a aplicação é o trabalho em módulos, que são pequenos
+blocos da aplicação, não necessariamente um entidade. 
