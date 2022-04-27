@@ -7,3 +7,5 @@ Quando temos em mente o SOLID, precisamos ter o contexto e separar suas responsa
 Assim, iremos criar uma categoria "CreateCategoryService".
 
 Criação de um método execute(), ele será responsável por tudo que o create precisa fazer.
+
+Retiramos a pasta service e criamos as Use Case para separarmos as responsabilidades ainda mais em category e specification
