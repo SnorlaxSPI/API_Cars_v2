@@ -1,4 +1,4 @@
-Para separar todas as funcionalidades existentes nas routas, precisamos utilizar o controller.
+Para separar todas as funcionalidades existentes nas rotas, precisamos utilizar o controller.
 
 São basicamente classes que recebem a nossa requisição e retornam a resposta para quem está chamando elas.
 
